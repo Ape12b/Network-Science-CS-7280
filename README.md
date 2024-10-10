@@ -27,3 +27,44 @@ Different ways to understand subgroups within a network:
 - **Components**: Components are maximal connected subgraphs where every node can reach every other node. A k-component extends this concept by requiring at least k independent paths between nodes, providing insight into the network's robustness.
 
 These metrics are widely used in fields like social network analysis, biology, and computer science to understand the structure and dynamics of networks.
+
+# Transitivity and Clustering Coefficient
+
+## 1. Transitivity
+Transitivity in a network refers to the likelihood that if node A is connected to node B, and node B is connected to node C, then node A is also connected to node C. This concept is important in social networks, where the "friend of my friend is also my friend" scenario is common. Perfect transitivity means that every component is a clique, though in most networks, transitivity is partial.
+
+### Measuring Transitivity
+- We consider a path of two edges (A-B-C).
+- If there is also a direct edge from A to C, then this path forms a closed triangle (A-B-C-A).
+- The clustering coefficient is then used to quantify this transitivity.
+
+## 2. Clustering Coefficient
+The clustering coefficient is a measure of the degree to which nodes in a network tend to cluster together. It is the ratio of closed triplets (three nodes that form a triangle) to the total triplets (three nodes connected by two edges).
+
+### Formulas for Clustering Coefficient
+There are several ways to express the clustering coefficient, depending on the type of network:
+
+- **Global Clustering Coefficient**:
+  \[
+  C = \frac{\text{Number of closed triplets}}{\text{Number of total triplets}}
+  \]
+  where a triplet is a set of three nodes with two or three connecting edges.
+
+- **Alternative Formula** (using triangles):
+  \[
+  C = \frac{3 \times \text{Number of triangles}}{\text{Number of connected triples}}
+  \]
+  where a triangle consists of three nodes with three edges, and a connected triple is a set of three nodes with two edges.
+
+- **Local Clustering Coefficient for a Node \(i\)**:
+  \[
+  C_i = \frac{\text{Number of pairs of neighbors of } i \text{ that are connected}}{\text{Total number of pairs of neighbors of } i}
+  \]
+  This is often expressed as:
+  \[
+  C_i = \frac{2 \times E_i}{k_i (k_i - 1)}
+  \]
+  where \( E_i \) is the number of connections between the neighbors of \( i \), and \( k_i \) is the degree of node \( i \).
+
+These formulas provide insights into how likely it is for a network to contain clustered or densely connected regions.
+
