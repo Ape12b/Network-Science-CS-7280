@@ -83,3 +83,30 @@ This measure is commonly used in social networks to assess the level of mutual c
 
 These insights into reciprocity highlight its significance in understanding the structure and function of various networked systems, especially in the social sciences.
 
+# Notes on Signed Edges and Structural Balance
+
+## 1. Signed Edges
+- **Definition**: Signed edges are edges in a network that carry a positive or negative sign. They represent relationships that can be either friendly/positive or hostile/negative.
+- **Use Cases**: Commonly used in social networks to capture sentiments like friendship (positive) or rivalry (negative).
+- **Interpretation**: In networks with signed edges, the nature of relationships can influence the dynamics of interactions. For example:
+  - Positive edges can indicate alliances, trust, or cooperation.
+  - Negative edges can indicate conflicts, competition, or distrust.
+
+## 2. Structural Balance
+- **Concept**: Structural balance is a theory that examines the stability of relationships in networks with signed edges.
+- **Balance Conditions**: According to structural balance theory, a triangle (three nodes and three edges) is considered balanced if:
+  - All three edges are positive, or
+  - Two edges are negative and one edge is positive.
+- **Imbalance**: A triangle is unbalanced if:
+  - It has one negative edge and two positive edges.
+  - All three edges are negative.
+- **Implications**: The theory suggests that people tend to shift their relationships to achieve balance, so unbalanced triangles will often change over time to reduce tension. For example:
+  - If two friends share a mutual enemy, the relationship is balanced.
+  - If two friends dislike each other’s friend, the relationship is imbalanced and may lead to shifts to restore balance.
+
+## 3. Applications of Structural Balance
+- **Social Dynamics**: Structural balance can be used to predict changes in social networks as people adjust their relationships to achieve a state of balance.
+- **Conflict Resolution**: In networks with frequent conflicts, structural balance theory helps understand how alliances and enmities might evolve over time.
+- **Organizational Analysis**: In workplace settings, understanding structural balance can aid in identifying potential sources of tension and avenues for team-building.
+
+These concepts provide insights into how the signs of relationships affect the stability and evolution of networks.
